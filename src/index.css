@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+      -apple-system, system-ui, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  }
+}
+
+@layer components {
+  html {
+    @apply scroll-smooth;
+  }
+
+  .t-container {
+    @apply max-w-7xl mx-auto px-4 md:px-8;
+    /* color: hsla(207.3, 100%, 15.1%, 0.41); */
+  }
+}
+
+/* #logo2 {
+  animation: logo2 5s ease-in;
+  stroke-width: 4;
+  stroke: #fff;
+  font-size: 200px;
+}
+
+@keyframes logo2 {
+  from {
+    stroke-dasharray: 0% 50%;
+    stroke-dashoffset: 20%;
+  }
+
+  to {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: -20%;
+  }
+} */

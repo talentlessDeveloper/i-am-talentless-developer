@@ -1,0 +1,10 @@
+const SectionTitle = ({ number, text }) => {
+  return (
+    <h2 className='text-lg md:text-2xl font-mono space-x-2 relative mb-6  md:mb-10 before:w-20 before:h-[2px] before:bg-zinc-500 before:absolute before:left-[35%] md:before:left-[18%] before:top-4'>
+      <span className='text-zinc-300 text-sm'>{number}.</span>
+      <span className='text-zinc-50'>{text}</span>
+    </h2>
+  );
+};
+
+export default SectionTitle;
