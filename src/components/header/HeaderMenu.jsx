@@ -3,7 +3,7 @@ import React from "react";
 const HeaderMenu = ({ openMenu }) => {
   return (
     <aside
-      className={`md:hidden h-screen px-3 py-8 z-[5] [width:min(75vw,25rem)] shadow bg-zinc-800 text-xl fixed right-0 top-0 transition-transform duration-300 ${
+      className={`md:hidden h-screen px-3 py-8 z-20 [width:min(75vw,25rem)] shadow bg-zinc-800 text-xl fixed right-0 top-0 transition-transform duration-300 ${
         openMenu ? "translate-x-0" : "translate-x-[200%]"
       }`}
     >

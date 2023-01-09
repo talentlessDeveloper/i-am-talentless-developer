@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className='h-24'>
       <nav className='t-container flex justify-between items-center '>
-        <a href='/'>
+        <a href='/' className='z-30'>
           <Logo
             width={100}
             height={100}
@@ -27,7 +27,7 @@ const Header = () => {
         <HeaderLinks />
 
         <button
-          className='md:hidden space-y-2 z-10'
+          className='md:hidden space-y-2 z-30'
           aria-label='navigation mobile menu'
           onClick={handleMenu}
         >
