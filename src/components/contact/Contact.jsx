@@ -44,6 +44,7 @@ const Contact = () => {
       variants={projectVariant}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.45 }}
+      id='contact'
     >
       <div className='t-container mt-24 font-serif text-zinc-50 '>
         <SectionTitle number={3} text='Contact' />
