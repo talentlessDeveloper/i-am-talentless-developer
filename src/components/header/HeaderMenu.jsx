@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const HeaderMenu = ({ openMenu }) => {
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "scroll";
+    }
+  }, [openMenu]);
   return (
     <aside
       className={`md:hidden h-screen px-3 py-8 z-20 [width:min(75vw,25rem)] shadow bg-zinc-800 text-xl fixed right-0 top-0 transition-transform duration-300 ${
