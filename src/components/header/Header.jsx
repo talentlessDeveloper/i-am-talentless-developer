@@ -62,7 +62,7 @@ const Header = () => {
 
       <HeaderMenu openMenu={openMenu} />
       {openMenu ? (
-        <div className='fixed h-screen bg-[rgba(255,255,255,0.2)] inset-0 backdrop-blur-[2px] z-[2]'></div>
+        <div className='fixed h-screen bg-[rgba(0,0,0,0.8)] inset-0 backdrop-blur-[3px] z-[2]'></div>
       ) : null}
     </header>
   );
