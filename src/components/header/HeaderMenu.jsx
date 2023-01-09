@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import { menuLinks } from "../../utility/menuLinks";
 
-const HeaderMenu = ({ openMenu }) => {
+const HeaderMenu = ({ openMenu, handleMenu }) => {
   useEffect(() => {
     if (openMenu) {
       document.body.style.overflowY = "hidden";
@@ -16,21 +17,20 @@ const HeaderMenu = ({ openMenu }) => {
     >
       <nav className='mt-32 space-y-12 text-zinc-50'>
         <ol className='flex flex-col items-center space-y-10 font-serif '>
-          <li className='[counter-increment:section] before:[content:counters(section,".")] before:text-zinc-300 before:block before:text-center hover:text-zinc-300 transition-colors duration-300 ease-[cubic-bezier(0.645,0.045,0.355,1)] '>
-            <a href='#about' className='p-2'>
-              About
-            </a>
-          </li>
-          <li className='[counter-increment:section] before:[content:counters(section,".")] before:text-zinc-300 before:block before:text-center hover:text-zinc-300 transition-colors duration-300 ease-[cubic-bezier(0.645,0.045,0.355,1)]'>
-            <a href='#projects' className='p-2'>
-              Projects
-            </a>
-          </li>
-          <li className='[counter-increment:section] before:[content:counters(section,".")] before:text-zinc-300 before:block before:text-center hover:text-zinc-300 transition-colors duration-300 ease-[cubic-bezier(0.645,0.045,0.355,1)]'>
-            <a href='#contact' className='p-2'>
-              Contact
-            </a>
-          </li>
+          {menuLinks.map((menuLink) => {
+            const { href, title } = menuLink;
+            return (
+              <li
+                key={href}
+                className='[counter-increment:section] before:[content:counters(section,".")] before:text-zinc-300 before:block before:text-center hover:text-zinc-300 transition-colors duration-300 ease-[cubic-bezier(0.645,0.045,0.355,1)]'
+                onClick={handleMenu}
+              >
+                <a href={href} className='p-2'>
+                  {title}
+                </a>
+              </li>
+            );
+          })}
         </ol>
         <div className='text-center'>
           <a

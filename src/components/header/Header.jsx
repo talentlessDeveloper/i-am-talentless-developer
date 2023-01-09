@@ -60,7 +60,7 @@ const Header = () => {
         </button>
       </nav>
 
-      <HeaderMenu openMenu={openMenu} />
+      <HeaderMenu openMenu={openMenu} handleMenu={handleMenu} />
       {openMenu ? (
         <div className='fixed h-screen bg-[rgba(0,0,0,0.8)] inset-0 backdrop-blur-[3px] z-[2]'></div>
       ) : null}
