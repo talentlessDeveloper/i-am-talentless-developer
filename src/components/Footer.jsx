@@ -8,6 +8,7 @@ const Footer = () => {
           Coded by &copy;{" "}
           <a
             href='https://github.com/talentlessDeveloper'
+            target='_blank'
             className='text-zinc-300 text-sm hover:text-zinc-50 transition-colors'
           >
             Ope Kareem
@@ -17,6 +18,7 @@ const Footer = () => {
           Design Inspiration from{" "}
           <a
             href='https://brittanychiang.com/'
+            target='_blank'
             className='text-zinc-300 text-sm hover:text-zinc-50 transition-colors'
           >
             Brittany Chiang
