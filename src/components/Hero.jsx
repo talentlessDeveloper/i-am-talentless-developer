@@ -6,7 +6,7 @@ import resume from "../assets/techCv.pdf";
 const Hero = () => {
   return (
     <section className='h-screen -mt-24 flex items-center'>
-      <div className='t-container'>
+      <div className='t-container' id='main'>
         <div className='md:px-10 text-zinc-400'>
           <h1 className='font-mono overflow-y-hidden'>
             <motion.span

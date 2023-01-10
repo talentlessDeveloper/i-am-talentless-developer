@@ -11,6 +11,12 @@ import { onLoadVariant } from "../utility/variant";
 const Home = () => {
   return (
     <section className='min-h-screen bg-zinc-900'>
+      <a
+        href='#main'
+        className='sr-only focus:not-sr-only text-zinc-50 text-lg'
+      >
+        Skip Link
+      </a>
       <motion.div variants={onLoadVariant} initial='hidden' animate='show'>
         <Header />
         <Hero />

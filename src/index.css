@@ -15,6 +15,10 @@
     @apply scroll-smooth;
   }
 
+  a:focus {
+    @apply outline-dashed outline-2 outline-zinc-50;
+  }
+
   .t-container {
     @apply max-w-7xl mx-auto px-4 md:px-8;
     /* color: hsla(207.3, 100%, 15.1%, 0.41); */
