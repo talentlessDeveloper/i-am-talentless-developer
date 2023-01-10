@@ -9,11 +9,11 @@ const Projects = () => {
         <SectionTitle number={2} text='Projects' />
         <div className='space-y-11 md:space-y-16'>
           {projectData.map((project) => {
-            const { title, techLists, img, id, text, reverse, link, live } =
+            const { title, techLists, img, text, reverse, link, live } =
               project;
             return (
               <Project
-                key={id}
+                key={live}
                 title={title}
                 text={text}
                 techLists={techLists}
