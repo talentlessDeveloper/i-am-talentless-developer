@@ -20,19 +20,20 @@ const About = () => {
         <div className='md:flex md:gap-x-2 space-y-8 md:space-y-0'>
           <div className='text-zinc-200 md:flex-[1.5]  md:max-w-xl w-full space-y-6 text-lg'>
             <p className=' '>
-              I was overseeing food production processes, ensuring their due
+              I was overseeing food production processes, ensuring the due
               processes are being followed from the beginning to the end of
               production.
             </p>
             <p>
-              I've always been fascinated by technology and the getting into
-              tech, a simple dm to Quincy Larson and his heartwarming response,
-              guidance through sharing of articles and sharing his own story
-              made believe it was possible.
+              Technology was always around me,it fascinates me and seeing the
+              possibilities, the breakthroughs in various industries and the
+              heights being reached with it,I got inspired and decided on
+              beginning my learning journey.
             </p>
-            <p>Now I sleep and wake up to Html,Css, Javascript and React.</p>
+
+            <p>Now I sleep and wake up to Html, Css, Javascript and React.</p>
             <p>Technologies I am recently working with are:</p>
-            <ul className='grid grid-cols-2 space-y-1'>
+            <ul className='grid grid-cols-2 space-y-1 font-semibold tracking-wide'>
               <li>React</li>
               <li>Javascript</li>
               <li>Html</li>

@@ -26,7 +26,7 @@ export const projectData = [
   {
     title: "Hackathon Challenge",
     techLists: ["JavaScript", "CSS"],
-    text: "An Altschool Hackathon project that involves building a dashboard to get information about students, a phonie that tells user what telecommunication carrie they are using and a redactr to help user share content safely on social media by scrambling words.",
+    text: "An Altschool Hackathon project that involves building a dashboard to get information about students, a phonie that tells user what telecommunication carrier they are using and a redactr to help user share content safely on social media by scrambling words.",
     img: hackathonImage,
     link: "https://github.com/chimoski/Altschool-circle-153-hackathon",
     live: "https://altschool-circle-153-hackathon.vercel.app/",
