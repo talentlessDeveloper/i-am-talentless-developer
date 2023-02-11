@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { menuLinks } from "../../utility/menuLinks";
 
+import resume from "../../assets/techCv6.pdf";
+
 const HeaderMenu = ({ openMenu, handleMenu }) => {
   useEffect(() => {
     if (openMenu) {
@@ -34,7 +36,8 @@ const HeaderMenu = ({ openMenu, handleMenu }) => {
         </ol>
         <div className='text-center'>
           <a
-            href='#'
+            href={resume}
+            download
             className='py-2 px-4 border border-solid border-zinc-300 rounded font-serif hover:bg-tint duration-300 transition-colors ease-[cubic-bezier(0.645,0.045,0.355,1)]'
           >
             Resume

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { heroVariant } from "../utility/variant";
 
-import resume from "../assets/techCv.pdf";
+import resume from "../assets/techCv6.pdf";
 
 const Hero = () => {
   return (
