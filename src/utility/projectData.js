@@ -37,7 +37,7 @@ export const projectData = [
   {
     title: "Tints And Shades",
     techLists: ["JavaScript", "Tailwind", "React"],
-    text: "Get tints and shades of different colors and copy them in formats like tailwind, CSS, SCSS. You also get to know the color names of hex,rgb and hsl codes ",
+    text: "Get tints and shades of different colors and copy them in formats like tailwind, CSS, SCSS. You also get to know the color names of hex,rgb and hsl codes. The library tinycolors was of huge help ",
     img: tintsAndShades,
     link: "https://github.com/talentlessDeveloper/tints-and-shades",
     live: "https://talentlessdeveloper.github.io/tints-and-shades/",
