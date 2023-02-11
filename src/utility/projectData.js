@@ -1,6 +1,7 @@
 import gitImage from "../assets/portfol-img-1.webp";
 import edenImage from "../assets/portfol-img-3.webp";
 import hackathonImage from "../assets/hackatjon-screenshot.webp";
+import tintsAndShades from "../assets/tints-and-shades.png";
 
 export const projectData = [
   {
@@ -11,7 +12,7 @@ export const projectData = [
     link: "https://github.com/talentlessDeveloper/github-repositories",
     live: "http://github-repositories-ten.vercel.app/",
     reverse: true,
-    id: Math.random() * 1000,
+    id: 1,
   },
   {
     title: "OurEden Clone",
@@ -21,7 +22,7 @@ export const projectData = [
     link: "https://github.com/talentlessDeveloper/ouredenclone",
     live: "https://talentlessdeveloper.github.io/ouredenclone/",
     reverse: false,
-    id: Math.random() * 1000,
+    id: 2,
   },
   {
     title: "Hackathon Challenge",
@@ -31,6 +32,16 @@ export const projectData = [
     link: "https://github.com/chimoski/Altschool-circle-153-hackathon",
     live: "https://altschool-circle-153-hackathon.vercel.app/",
     reverse: true,
-    id: Math.random() * 1000,
+    id: 3,
+  },
+  {
+    title: "Tints And Shades",
+    techLists: ["JavaScript", "Tailwind", "React"],
+    text: "Get tints and shades of different colors and copy them in formats like tailwind, CSS, SCSS. You also get to know the color names of hex,rgb and hsl codes ",
+    img: tintsAndShades,
+    link: "https://github.com/talentlessDeveloper/tints-and-shades",
+    live: "https://talentlessdeveloper.github.io/tints-and-shades/",
+    reverse: false,
+    id: 4,
   },
 ];

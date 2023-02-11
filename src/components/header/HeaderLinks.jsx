@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { itemVariant } from "../../utility/variant";
 
-import resume from "../../assets/techCv.pdf";
+import resume from "../../assets/techCv6.pdf";
 
 const HeaderLinks = () => {
   return (
