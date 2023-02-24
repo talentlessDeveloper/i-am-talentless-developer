@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className='h-24'>
       <nav className='t-container flex justify-between items-center '>
-        <a href='/' className='z-30'>
+        <a href='/' className='z-30' aria-label='home'>
           <Logo
             width={100}
             height={100}
