@@ -1,7 +1,7 @@
 import gitImage from "../assets/portfol-img-1.webp";
 import edenImage from "../assets/portfol-img-3.webp";
 import hackathonImage from "../assets/hackatjon-screenshot.webp";
-import tintsAndShades from "../assets/tints-and-shades.png";
+import tintsAndShades from "../assets/tints-and-shades.webp";
 
 export const projectData = [
   {
