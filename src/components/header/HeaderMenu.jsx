@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { menuLinks } from "../../utility/menuLinks";
 
-import resume from "../../assets/techcv6.pdf";
+import resume from "../../assets/techCV8.pdf";
 
 const HeaderMenu = ({ openMenu, handleMenu }) => {
   useEffect(() => {
