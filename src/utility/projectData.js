@@ -2,6 +2,7 @@ import gitImage from "../assets/portfol-img-1.webp";
 import edenImage from "../assets/portfol-img-3.webp";
 import hackathonImage from "../assets/hackatjon-screenshot.webp";
 import tintsAndShades from "../assets/tints.webp";
+import vueCart from "../assets/vue-cart-1.webp";
 
 export const projectData = [
   {
@@ -23,6 +24,16 @@ export const projectData = [
     live: "https://talentlessdeveloper.github.io/ouredenclone/",
     reverse: false,
     id: 2,
+  },
+  {
+    title: "Vue Cart",
+    techLists: ["Firebase", "JavaScript", "CSS", "Vue", "Pinia"],
+    text: "This is an authenticated app that allows you view products  using firebase authentication to validate users and also using vue's router beforeEach to protect routes. The app's states are managed by Pinia store ",
+    img: vueCart,
+    link: "https://github.com/talentlessDeveloper/vue-cart",
+    live: "https://vue-cart-five.vercel.app/",
+    reverse: true,
+    id: 5,
   },
   {
     title: "Hackathon Challenge",
