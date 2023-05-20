@@ -6,32 +6,28 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <motion.section
-      className='bg-zinc-900'
-      id='about'
-      initial='offScreen'
-      whileInView={"onScreen"}
-      variants={projectVariant}
-      viewport={{ once: true, amount: 0.25 }}
-      transition={{ duration: 0.45 }}
-    >
+    <motion.section className='bg-zinc-900' id='about'>
       <div className='t-container md:px-10'>
         <SectionTitle number={1} text='About Me' />
         <div className='md:flex md:gap-x-2 space-y-8 md:space-y-0'>
-          <div className='text-zinc-200 md:flex-[1.5]  md:max-w-xl w-full space-y-6 text-lg'>
+          <div className='text-zinc-200 md:flex-[1.5]  md:max-w-xl w-full space-y-6 text-lg '>
             <p className=' '>
-              I was overseeing food production processes, ensuring the due
-              processes are being followed from the beginning to the end of
-              production.
-            </p>
-            <p>
-              Technology was always around me,it fascinates me and seeing the
-              possibilities, the breakthroughs in various industries and the
-              heights being reached with it,I got inspired and decided on
-              beginning my learning journey.
+              I dedicated myself to overseeing food production processes,
+              meticulously ensuring adherence to due processes from inception to
+              completion.
             </p>
 
-            <p>Now I sleep and wake up to Html, Css, Javascript and React.</p>
+            <p>
+              However, the allure of technology has always surrounded me, with
+              its boundless possibilities, remarkable advancements across
+              industries, and unprecedented achievements. I became inspired me
+              to embark on a transformative learning journey.
+            </p>
+
+            <motion.p>
+              Now, my days are defined by an unyielding passion for HTML, CSS,
+              JavaScript, and React. .
+            </motion.p>
             <p>Technologies I am recently working with are:</p>
             <ul className='grid grid-cols-2 space-y-1 font-semibold tracking-wide'>
               <li>React</li>
@@ -40,11 +36,11 @@ const About = () => {
               <li>Css</li>
             </ul>
           </div>
-          <div className='md:flex-1 flex justify-end ss:justify-start md:justify-center relative before:rounded before:absolute before:max-w-xs before:w-56 before:h-56 ss:before:w-full  ss:before:h-80 before:border-solid before:border-2 before:border-zinc-50 before:block before:top-4 before:right-7 ss:before:left-7 lg:before:left-40 before:z-0 hover:before:translate-y-1 transition-all'>
+          <div className='md:flex-1  flex justify-end ss:justify-start md:justify-center relative before:md:hidden before:rounded before:absolute before:max-w-xs before:w-56 before:h-56 ss:before:w-full  ss:before:h-80 before:border-solid before:border-2 before:border-zinc-50 before:block before:top-4 before:right-7 ss:before:left-7 lg:before:left-40 before:z-0 hover:before:translate-y-1 transition-all'>
             <img
               src={avatar}
               alt='Ope Kareem'
-              className='max-w-xs w-56 h-56 ss:w-full ss:h-80 mr-12 ss:mr-0 relative object-cover z-[1] grayscale hover:grayscale-0 transition-all rounded  '
+              className='max-w-md w-56 h-56 ss:w-full ss:h-80 mr-12 ss:mr-0 relative object-cover z-[1] grayscale hover:grayscale-0 transition-all rounded md:sticky md:top-2   md:w-full '
             />
             {
               // <svg

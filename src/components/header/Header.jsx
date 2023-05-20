@@ -8,13 +8,30 @@ import HeaderMenu from "./HeaderMenu";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
+  // const [hideHeader, setHideHeader] = useState(false);
+
+  // useEffect(() => {
+  //   let prevScrollY = 0;
+
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
+  //     setHideHeader(currentScrollY > prevScrollY);
+  //     prevScrollY = currentScrollY;
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   const handleMenu = () => {
     setOpenMenu((m) => !m);
   };
   return (
-    <header className='h-24'>
+    <header className=' w-full shadow-lg  h-24 backdrop-blur-md'>
       <nav className='t-container flex justify-between items-center '>
-        <a href='/' className='z-30' aria-label='home'>
+        <a href='/' className='z-50' aria-label='home'>
           <Logo
             width={100}
             height={100}
@@ -27,7 +44,7 @@ const Header = () => {
         <HeaderLinks />
 
         <button
-          className='md:hidden space-y-2 z-30'
+          className='md:hidden space-y-2 z-50'
           aria-label='navigation mobile menu'
           onClick={handleMenu}
         >
