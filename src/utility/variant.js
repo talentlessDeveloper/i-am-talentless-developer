@@ -10,8 +10,8 @@ export const containerVariant = {
 
 export const logoVariant = {
   animate: {
-    strokeDasharray: ["0%, 50%", "50%, 0%"],
-    strokeDashoffset: ["20%", "-20%"],
+    strokeDasharray: ['0%, 50%', '50%, 0%'],
+    strokeDashoffset: ['20%', '-20%'],
     transition: {
       //   ease: "easeInOut",
       ease: [0.6, 0.01, -0.05, 0.95],
@@ -28,6 +28,8 @@ export const onLoadVariant = {
     opacity: 1,
     transition: {
       staggerChildren: 0.15,
+      ease: 'easeInOut',
+      duration: 0.5,
     },
   },
   exit: {
@@ -43,7 +45,7 @@ export const itemVariant = {
   show: {
     y: 0,
     transition: {
-      ease: [0.6, 0.01, -0.05, 0.95],
+      ease: 'easeInOut',
       duration: 0.25,
     },
   },
@@ -56,19 +58,23 @@ export const heroVariant = {
   show: {
     y: 0,
     transition: {
-      ease: [0.6, 0.01, -0.05, 0.95],
+      // ease: [0.6, 0.01, -0.05, 0.95],
+      ease: 'easeInOut',
       duration: 0.25,
     },
   },
 };
 
 export const projectVariant = {
-  offScreen: {
-    opacity: 0,
-    y: 40,
+  hidden: {
+    y: 100,
   },
-  onScreen: {
-    opacity: 1,
+  show: {
     y: 0,
+    transition: {
+      // ease: [0.6, 0.01, -0.05, 0.95],
+      ease: 'easeInOut',
+      duration: 0.5,
+    },
   },
 };

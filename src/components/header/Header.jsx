@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 
-import Logo from "../Logo";
-import HeaderLinks from "./HeaderLinks";
-import HeaderMenu from "./HeaderMenu";
+import Logo from '../Logo';
+import HeaderLinks from './HeaderLinks';
+import HeaderMenu from './HeaderMenu';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -29,23 +29,23 @@ const Header = () => {
     setOpenMenu((m) => !m);
   };
   return (
-    <header className=' w-full shadow-lg  h-24 backdrop-blur-md'>
-      <nav className='t-container flex justify-between items-center '>
-        <a href='/' className='z-50' aria-label='home'>
+    <header className=" w-full shadow-lg  h-24 backdrop-blur-md overflow-x-clip fixed top-0 left-0 right-0 z-[999]">
+      <nav className="t-container flex justify-between items-center ">
+        <a href="/" className="z-50" aria-label="home">
           <Logo
             width={100}
             height={100}
-            fontSize='text-[10rem]'
-            fill='#fff'
-            anchor='end'
+            fontSize="text-[10rem]"
+            fill="#fff"
+            anchor="end"
           />
         </a>
 
         <HeaderLinks />
 
         <button
-          className='md:hidden space-y-2 z-50'
-          aria-label='navigation mobile menu'
+          className="md:hidden space-y-2 z-50"
+          aria-label="navigation mobile menu"
           onClick={handleMenu}
         >
           <motion.span
@@ -69,7 +69,7 @@ const Header = () => {
           <motion.span
             animate={openMenu ? { y: -10, opacity: 0 } : { y: 0, opacity: 1 }}
             transition={{
-              ease: "easeInOut",
+              ease: 'easeInOut',
               duration: 0.45,
             }}
             className={`h-[2px] w-5 bg-zinc-300 block`}
@@ -79,7 +79,7 @@ const Header = () => {
 
       <HeaderMenu openMenu={openMenu} handleMenu={handleMenu} />
       {openMenu ? (
-        <div className='fixed h-screen bg-[rgba(0,0,0,0.8)] inset-0 backdrop-blur-[3px] z-[2]'></div>
+        <div className="fixed h-screen bg-[rgba(0,0,0,0.8)] inset-0 backdrop-blur-[3px] z-[2]"></div>
       ) : null}
     </header>
   );
