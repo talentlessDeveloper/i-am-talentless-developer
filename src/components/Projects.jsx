@@ -11,22 +11,9 @@ const Projects = () => {
           <span className="text-zinc-50">Projects</span>
         </h2>
         <div className="space-y-11 md:space-y-16">
-          {projectData.map((project) => {
-            const { title, techLists, img, text, reverse, link, live } =
-              project;
-            return (
-              <Project
-                key={live}
-                title={title}
-                text={text}
-                techLists={techLists}
-                img={img}
-                reverse={reverse}
-                link={link}
-                live={live}
-              />
-            );
-          })}
+          <h3 className="text-3xl md:text-4xl text-slate-50 text-center">
+            In Development
+          </h3>
         </div>
       </div>
     </section>
@@ -34,3 +21,21 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// {
+//   projectData.map((project) => {
+//     const { title, techLists, img, text, reverse, link, live } = project;
+//     return (
+//       <Project
+//         key={live}
+//         title={title}
+//         text={text}
+//         techLists={techLists}
+//         img={img}
+//         reverse={reverse}
+//         link={link}
+//         live={live}
+//       />
+//     );
+//   });
+// }
