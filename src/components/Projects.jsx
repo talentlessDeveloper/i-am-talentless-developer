@@ -12,7 +12,13 @@ const Projects = () => {
         </h2>
         <div className="space-y-11 md:space-y-16">
           <h3 className="text-3xl md:text-4xl text-slate-50 text-center">
-            In Development
+            <a
+              href="https://ope-kareem-v1.vercel.app/"
+              target="_blank"
+              className="text-2xl md:text-4xl underline underline-offset-4 decoration-orange-500 hover:no-underline hover:text-slate-400 transition-all"
+            >
+              Improved Portfolio
+            </a>
           </h3>
         </div>
       </div>
